@@ -10,7 +10,148 @@
     <meta name="HandheldFriendly" content="true" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>가입이메일</title>
-    <link rel="stylesheet" type="text/css" href="/css/joinMail.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+* {
+  overflow-y: hidden;
+  margin:0px;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  background-color: #f8f4eb;
+}
+body {
+  margin: 0px;
+  min-width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-y: hidden;
+}
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#wrapper {
+   width: 720px;
+   height: fit-content;
+   padding:35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+   .introImg{
+    margin-bottom: 32px;
+    align-self: flex-start;
+   }
+
+
+   .support{
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 62px;
+   }
+}
+
+
+.intro{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+
+.downloadContainer{
+  display: flex;
+  border: 1px #BBB solid;
+  flex-direction: column;
+  gap:25px;
+  padding: 20px 40px;
+  margin-bottom: 17px;
+
+  p{
+    color: #222;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+.downloadBtn{
+  width: 184px;
+  height: 32px;
+  background-color: #5076FF;
+  border-radius: 4px;
+  color: #fff;
+  margin-bottom: 15px;
+  span{
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:4px;
+  border:none;
+
+}
+
+.agreementBtn{
+   width: 100%;
+  height: 48px;
+  background-color: #EEE;
+  margin-bottom: 15px;
+
+  span{
+    color: #222;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+  }
+
+}
+
+.contact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0px;
+  border-top: 1px solid #D9D9D9;
+  p{
+    color: #444;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+    </style>
   </head>
   <body>
     <div id="wrapper">

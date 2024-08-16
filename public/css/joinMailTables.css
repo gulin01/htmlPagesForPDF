@@ -1,13 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 * {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   margin:0px;
   box-sizing: border-box;
 }
 html {
   height: 100vh;
-  background-color: #f8f4eb;
+  background-color: #fff;
 }
 body {
   margin: 0px;
@@ -19,7 +19,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 * {
   font-family: 'Noto Sans KR', sans-serif;
@@ -34,13 +34,17 @@ body {
    align-items: center;
 
 
-   /* .introImg{
-    margin-bottom: 32px;
+   .support{
+    width: 100%;
     align-self: flex-start;
-   } */
+    margin-bottom: 62px;
+   }
 
+
+}
 .section1{
     display: flex;
+    width: 100%;
     gap:14px;
     margin-top: 66px;
 
@@ -54,13 +58,6 @@ body {
    }
 
 }
-   .support{
-    width: 100%;
-    align-self: flex-start;
-    margin-bottom: 62px;
-   }
-}
-
 
 .intro{
     display: flex;
@@ -183,11 +180,28 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+    .subtitle{
+        background: #DBE2FB;
+    }
+
+    .row-span-2{
+        grid-row: span 2;
+        background: #AABCFF !important;
+        height: 42px;
+    }
+    .col-span-2{
+        grid-column: span 2;
+        background: #AABCFF !important;
+    }
+  
+
+
    }
 
    .border-r {
     border-right: 1px solid #000;
-}
+    }
     .fill{
         grid-column: span 3;
     }
@@ -196,28 +210,132 @@ body {
         border-bottom: 1px solid #000;
     }
    }
-
-   .buttons{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap:10px;
+   .red{
+       color: #F00;
+       font-family: Inter;
+       font-size: 10px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: normal;
+       margin-left: 5px;;
    }
 
 
-
-.contact{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 18px 0px;
-  border-top: 1px solid #D9D9D9;
-  p{
-    color: #444;
-    font-family: Pretendard;
-    font-size: 16px;
+.comment{
+    width: 100%;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
+    margin-top: 32px;
+ }
+
+
+ .signBox{
+    margin-top:62px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:10px;
+    p {
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+ }
+
+
+ .additionals{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    padding:14px;
+    background: #EEEDED;
+    margin-top: 28px;
+
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+    .normal{
+        font-weight: 400;
+    }
+
+    .bold{
+        font-weight: 600;
+    }
+ }
+
+
+ .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 14px;
+    margin-top: 18px;  
+    margin-bottom: 200px;  
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
   }
-}
+
+
+  .claimTableMinors{
+    display: grid;
+    grid-template-columns : 40% 20% 20% 20% ;
+    width: 100%;
+    grid-template-columns : 40% 30% 30% ;
+
+    .title{
+        background-color: #DBE2FB;
+        border-top: 1px solid #000;
+        /* border-right: 1px solid #000; */
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }

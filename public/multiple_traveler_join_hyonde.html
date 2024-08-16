@@ -9,11 +9,12 @@
     />
     <meta name="HandheldFriendly" content="true" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>가입이메일</title>
-   <style>
-    
+    <title>가입증명서</title>
+    <style>
+        
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 * {
+  /* overflow-y: hidden; */
   margin:0px;
   box-sizing: border-box;
 }
@@ -205,6 +206,16 @@ body {
         border-bottom: 1px solid #000;
     }
    }
+   .red{
+       color: #F00;
+       font-family: Inter;
+       font-size: 10px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: normal;
+       margin-left: 5px;;
+   }
+
 
 .comment{
     width: 100%;
@@ -282,7 +293,8 @@ body {
     }
   }
 
-   </style>
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/joinMailTables.css" />
   </head>
   <body>
     <div id="wrapper">
@@ -302,8 +314,8 @@ body {
                 <div class="table">
                     <div class="title">보험종목</div>
                     <div class="data">해외여행자보험</div>
-                    <div class="title">보험종목</div>
-                    <div class="data border-r">해외여행자보험</div>
+                    <div class="title">증권번호</div>
+                    <div class="data border-r">1255421-2</div>
     
                     <div class="title">여행지</div>
                     <div class="data fill border-r" >일본 (여행)</div>
@@ -320,21 +332,19 @@ body {
             <div class="unit"> 
                 <h3>2. 보험가입자(피보험자) 정보 </h3>
                 <div class="table">
-                    <div class="title">보험종목</div>
-                    <div class="data">해외여행자보험</div>
-                    <div class="title">보험종목</div>
-                    <div class="data border-r">해외여행자보험</div>
+                    <div class="title">이름</div>
+                    <div class="data">홍길동  <span class="red"> 외 2인</span></div>
+                    <div class="title">출생년도</div>
+                    <div class="data border-r">1999</div>
     
-                    <div class="title">여행지</div>
-                    <div class="data fill border-r" >일본 (여행)</div>
+                    <div class="title">휴대폰번호</div>
+                    <div class="data">010-1234-5678</div>
+                    <div class="title">이메일</div>
+                    <div class="data border-r">gildong@gmail.com</div>
     
-                    <div class="title">보험기간</div>
-                    <div class="data fill border-r" >2024-07-01 부터 2024-07-10 까지</div>
-    
-                    <div class="title border-b">납입보험료</div>
-                    <div class="data border-b">100,000</div>
-                    <div class="title  border-b">보험료 결제일</div>
-                    <div class="data border-r border-b">2024-06-30</div>
+                    <div class="title  border-b">보험금수령인</div>
+                    <div class="data fill border-r border-b" >ㅇ사망 시 : 법정상속인  ㅇ사망 외 : 본인(단, 미성년의 경우 법정대리인)</div>
+
                 </div>
             </div>
 
@@ -352,7 +362,7 @@ body {
             </div>
         </div> 
 
-        <p class="comment">위와 같이 홍길동 고객님께서는 해외여행자보험에 가입하셨음을 확인합니다.</p>
+        <p class="comment">위와 같이 홍길동 고객님 외 2인 께서는 해외여행자보험에 가입하셨음을 확인합니다.</p>
 
         <div class="signBox">
             <p>발급일 : YYYY년 MM월 DD일</p>

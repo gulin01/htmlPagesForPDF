@@ -33,6 +33,34 @@ app.get('/page_5', (req, res) => {
 });
 
 
+// 여행자_가입증명서(2인 이상)
+app.get('/page_6', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'multiple_traveler_join_hyonde.html'));
+});
+
+
+// 여행자_가입증명서(2인 이상_미성년자 포함)
+app.get('/page_7', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'multiple_traveler_minor_join_hyonde.html'));
+});
+
+// 여행자_가입증명서_4번
+app.get('/page_8', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'multiple_traveler_minor_join_hyonde_list.html'));
+});
+
+
+
+// 펫보험 가입 증명서
+app.get('/page_9', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'pet_join_hyonde_proof.html'));
+});
+
+// 소상공인 보험 가입 증명서
+app.get('/page_10', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'business_join_hyonde_proof.html'));
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
