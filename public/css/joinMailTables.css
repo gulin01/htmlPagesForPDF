@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+* {
+  overflow-y: hidden;
+  margin:0px;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  background-color: #f8f4eb;
+}
+body {
+  margin: 0px;
+  min-width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-y: hidden;
+}
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#wrapper {
+   /* width: 720px; */
+   width: fit-content;
+   height: fit-content;
+   padding:35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+   /* .introImg{
+    margin-bottom: 32px;
+    align-self: flex-start;
+   } */
+
+.section1{
+    display: flex;
+    gap:14px;
+    margin-top: 66px;
+
+   p{
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+
+}
+   .support{
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 62px;
+   }
+}
+
+
+.intro{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+    margin-top: 35px;
+
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+
+
+.tables{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:38px;
+    margin-top: 70px;
+    
+    .unit{
+        display: flex;
+        flex-direction: column;
+        gap:6px;
+        width: 100%;
+
+        h3{
+            color: #000;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+   
+   .table{
+    display: grid;
+    grid-template-columns : 20% 30%  20% 30% ;
+    width: 100%;
+
+    .title{
+        background-color: #AABCFF;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+
+    }
+   }
+
+   .claimTable{
+    display: grid;
+    grid-template-columns : 40% 30% 30% ;
+    width: 100%;
+
+    .title{
+        background-color: #DBE2FB;
+        border-top: 1px solid #000;
+        /* border-right: 1px solid #000; */
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   }
+
+   .border-r {
+    border-right: 1px solid #000;
+}
+    .fill{
+        grid-column: span 3;
+    }
+
+    .border-b{
+        border-bottom: 1px solid #000;
+    }
+   }
+
+   .buttons{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap:10px;
+   }
+
+
+
+.contact{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0px;
+  border-top: 1px solid #D9D9D9;
+  p{
+    color: #444;
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
