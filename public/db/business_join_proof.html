@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>가입증명서</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+* {
+  /* overflow-y: hidden; */
+  
+  margin:0px;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  background-color: #fff;
+}
+body {
+  margin: 0px;
+  min-width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-y: auto;
+}
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#wrapper {
+   min-width: 720px;
+   max-width: 1000px;
+   width: fit-content;
+   height: fit-content;
+   padding:35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+   .support{
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 62px;
+   }
+
+
+}
+.section1{
+    display: flex;
+    width: 100%;
+    gap:14px;
+    margin-top: 66px;
+
+   p{
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+
+}
+
+.intro{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+    margin-top: 35px;
+
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+
+
+.tables{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:38px;
+    margin-top: 70px;
+    
+    .unit{
+        display: flex;
+        flex-direction: column;
+        gap:6px;
+        width: 100%;
+
+        h3{
+            color: #000;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        
+    }
+   
+   .table{
+    display: grid;
+    grid-template-columns : 20% 30%  20% 30% ;
+    width: 100%;
+
+    .title{
+        background-color: #AABCFF;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+
+    }
+   }
+
+
+
+   .border-r {
+    border-right: 1px solid #000;
+    }
+    .fill{
+        grid-column: span 3;
+    }
+
+    .border-b{
+        border-bottom: 1px solid #000;
+    }
+   }
+
+.comment{
+    width: 100%;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 32px;
+ }
+
+
+ .signBox{
+    margin-top:62px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:10px;
+    p {
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+ }
+
+
+ .additionals{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    padding:14px;
+    background: #EEEDED;
+    margin-top: 28px;
+
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+    .normal{
+        font-weight: 400;
+    }
+
+    .bold{
+        font-weight: 600;
+    }
+ }
+
+
+ .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 14px;
+    margin-top: 18px;  
+    margin-bottom: 200px;  
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+  }
+
+
+  .claimTable{
+    display: grid;
+    grid-template-columns : 20% 20% 30% 30% ;
+    width: 100%;
+
+    .title{
+        background: #AABCFF;
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   }
+
+   .col-span-2 {
+    grid-column: span 2;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+        <div class="section1">
+            <img src="/images/dbMini.svg" alt="DB손해보험" class="introImg"/>
+            <p>소상공인 보험 가입증명서</p>
+        </div>
+
+        <div class="intro">
+            <p>※ 아래와 같이 보험계약사항이 있음을 증명합니다.</p>
+            <p>※ 이 증명서는 보험가입사실을 확인하는 용도로만 사용 가능하며, 보험계약사항과 관련된 모든 사항은 해당 보험증권 및 약관을 따릅니다.</p>
+        </div>
+
+        <div class="tables">
+            <div class="unit"> 
+                <h3>1. 기본사항 </h3>
+                <div class="table">
+                    <div class="title">보험종목</div>
+                    <div class="data">소상공인 보험</div>
+                    <div class="title">증권번호</div>
+                    <div class="data border-r">1255421-2</div>
+    
+                    <div class="title">피보험자(사업자)명</div>
+                    <div class="data fill border-r" >홍길동</div>
+    
+                    <div class="title">보험기간</div>
+                    <div class="data fill border-r" >2024-07-01 부터 2024-07-10 까지</div>
+    
+                    <div class="title border-b">납입보험료</div>
+                    <div class="data border-b">100,000</div>
+                    <div class="title  border-b">보험료 결제일</div>
+                    <div class="data border-r border-b">2024-06-30</div>
+                </div>
+            </div>
+            <div class="unit"> 
+                <h3>2. 보장(사업장) 정보 </h3>
+                <div class="table"> 
+                    <div class="title">사업자명</div>
+                    <div class="data">(주)모빈스 </div>
+                    <div class="title">사업자번호</div>
+                    <div class="data border-r">112-11-12345</div>
+    
+                    <div class="title">사업자주소</div>
+                    <div class="data">서울시 구로구 디지털로32가길 18 3층 </div>
+                    <div class="title">이메일</div>
+                    <div class="data border-r">gildong@gmail.com</div>
+
+                    <div class="title">업종</div>
+                    <div class="data">음식점</div>
+                    <div class="title">매출액</div>
+                    <div class="data border-r">20억 이하</div>
+
+                    <div class="title border-b">연면적</div>
+                    <div class="data  border-b">30평(99.17㎡)</div>
+                    <div class="title  border-b">연락처</div>
+                    <div class="data border-r  border-b">010-2345-5678</div>
+
+                </div>
+            </div>
+
+            <div class="unit">
+                <h3>3. 보장내용 </h3>
+                <div class="claimTable">
+                   <div class="title ">구분</div>
+                   <div class="title">가입금액 및 보상한도액</div>
+                   <div class="title ">자기부담금</div>
+                   <div class="title ">보상내용</div>
+                   <!-- DYNAMIC DATA -->
+                </div>
+            </div>
+        </div> 
+
+        <p class="comment">위와 같이 홍길동 고객님께서는 소상공인 종합보험에 가입하셨음을 확인합니다.</p>
+
+        <div class="signBox">
+            <p>발급일 : YYYY년 MM월 DD일</p>
+            <img src="/images/dbSign.svg" alt="Sign">
+        </div>
+
+        <div class="additionals">
+            <p class="bold">보장성 보험으로 만기 해지 환급금이 없습니다.</p>
+            <p class="normal">*보험기간의 종료 및 보험료 미납에 의하여 계약이 해지된 경우는 당사의 보상책임이 발생하지 않습니다.</p>
+            <p class="normal">*고의사고는 보장하지 아니하며, 지급한도, 면책사항, 감액지급사항 등 보험금지급제한 조건에 대해서는 반드시 약관을 참조하시기 바랍니다.</p>
+            <p class="bold">보험관련 문의는 아래의 고객센터로 확인해 주세요.</p>
+        </div>
+
+       <div class="contact">
+        <p>※ 고객센터(평일 오전 9시 ~ 오후 6시) : 1577-7033</p>
+       </div> 
+    </div> 
+    <script >
+
+const claimsHistory = [
+    {
+        type: "재물손해 - 시설, 집기, 재고자산",
+        joinFee: "30,000,000원",
+        self: "10,000원",
+        note: "사업장 내 직접손해 및 타인의 재물 손실"
+    },
+    {
+        type: "재물손해 - 도난",
+        joinFee: "10,000,000원",
+        self: "면책기간 10일",
+        note: "화재로 인해 영업불가 상태에서의 매출손실 보장"
+    },
+    {
+        type: "배상책임 - 화재배상",
+        joinFee: "50,000,000원",
+        self: "20,000원",
+        note: "화재로 인한 타인 재물 손해 및 배상 책임"
+    },
+    {
+        type: "배상책임 - 화재소송",
+        joinFee: "20,000,000원",
+        self: "면책기간 7일",
+        note: "화재 관련 소송 비용 보장"
+    },
+    {
+        type: "손해배상 - 고객 상해",
+        joinFee: "15,000,000원",
+        self: "5,000원",
+        note: "고객이 사업장 내에서 입은 상해에 대한 배상"
+    },
+    {
+        type: "손해배상 - 직원 상해",
+        joinFee: "25,000,000원",
+        self: "10,000원",
+        note: "직원이 업무 중 입은 상해에 대한 배상"
+    },
+    {
+        type: "비용손해 - 영업손실",
+        joinFee: "40,000,000원",
+        self: "면책기간 14일",
+        note: "재해로 인한 영업 중단에 따른 손실 보장"
+    },
+    {
+        type: "비용손해 - 긴급복구비용",
+        joinFee: "5,000,000원",
+        self: "3,000원",
+        note: "재해 발생 후 긴급 복구를 위한 비용 보장"
+    },
+    {
+        type: "비용손해 - 임시거주비용",
+        joinFee: "7,000,000원",
+        self: "면책기간 5일",
+        note: "재해로 인한 임시 거주 비용 보장"
+    },
+    {
+        type: "비용손해 - 의료비",
+        joinFee: "10,000,000원",
+        self: "10,000원",
+        note: "사고 발생 시 의료비 보장"
+    }
+];
+
+
+// 
+const claimTable = document.querySelector('.claimTable');
+
+claimsHistory.forEach((claim, index) => {
+    // Type and Range (span 2 columns)
+    const typeDiv = document.createElement('div');
+    typeDiv.className = 'data';
+    typeDiv.textContent = claim.type
+  
+    const feeDiv = document.createElement('div')
+    feeDiv.className = "data"
+    feeDiv.textContent = claim.joinFee
+
+    // Price
+    const selfDiv = document.createElement('div');
+    selfDiv.className = 'data';
+    selfDiv.textContent = claim.self;
+
+    // Self Pay
+    const noteDiv = document.createElement('div');
+    noteDiv.className = 'data border-r';
+    noteDiv.textContent = claim.note;
+
+    // If it's the last row, add the `border-b` class
+    if (index === claimsHistory.length - 1) {
+        typeDiv.classList.add('border-b');
+        feeDiv.classList.add('border-b');
+        selfDiv.classList.add('border-b');
+        noteDiv.classList.add('border-b');
+    }
+
+    // Append to the claimTable
+    claimTable.appendChild(typeDiv);
+    claimTable.appendChild(feeDiv);
+    claimTable.appendChild(selfDiv);
+    claimTable.appendChild(noteDiv);
+});
+    </script>
+  </body>
+</html>

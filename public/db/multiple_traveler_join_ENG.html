@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>가입증명서</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+* {
+  /* overflow-y: hidden; */
+  margin:0px;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  background-color: #fff;
+}
+body {
+  margin: 0px;
+  min-width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  overflow-y: auto;
+}
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+#wrapper {
+    min-width: 720px;
+    width: fit-content;
+   height: fit-content;
+   padding:35px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+
+   .support{
+    width: 100%;
+    align-self: flex-start;
+    margin-bottom: 62px;
+   }
+
+
+}
+.section1{
+    display: flex;
+    width: 100%;
+    gap:14px;
+    margin-top: 66px;
+
+   p{
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   }
+
+}
+
+.intro{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+    margin-top: 35px;
+
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+
+
+
+.tables{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:38px;
+    margin-top: 70px;
+    
+    .unit{
+        display: flex;
+        flex-direction: column;
+        gap:6px;
+        width: 100%;
+
+        h3{
+            color: #000;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+   
+   .table{
+    display: grid;
+    grid-template-columns : 20% 30%  20% 30% ;
+    width: 100%;
+
+    .title{
+        background-color: #AABCFF;
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+
+    }
+   }
+
+   .claimTable{
+    display: grid;
+    grid-template-columns : 40% 30% 30% ;
+    width: 100%;
+
+    .title{
+        background-color: #DBE2FB;
+        border-top: 1px solid #000;
+        /* border-right: 1px solid #000; */
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   }
+
+   .border-r {
+    border-right: 1px solid #000;
+    }
+    .fill{
+        grid-column: span 3;
+    }
+
+    .border-b{
+        border-bottom: 1px solid #000;
+    }
+   }
+
+
+
+.comment{
+    width: 100%;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 32px;
+ }
+
+
+ .signBox{
+    margin-top:62px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap:10px;
+    p {
+        color: #000;
+        text-align: right;
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+ }
+
+
+ .additionals{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    padding:14px;
+    background: #EEEDED;
+    margin-top: 28px;
+
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+    .normal{
+        font-weight: 400;
+    }
+
+    .bold{
+        font-weight: 600;
+    }
+ }
+
+
+ .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 14px;
+    margin-top: 18px;  
+    margin-bottom: 200px;  
+    p{
+        color: #000;
+        font-family: Inter;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+  }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/joinMailTables.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+        <div class="section1">
+            <img src="/images/dbMini.svg" alt="현대해상" class="introImg"/>
+            <p>OVERSEAS TRAVELLER'S INSURANCE CERTIFICATION</p>
+        </div>
+
+        <div class="intro">
+            <p>※ This is to certify that the insurer has issued policies of insurance as indicated belows.</p>
+            <p>※ This certificate can only be used to confirm the fact that you are insured, and all matters related to the insurance contract are subject to the applicable insurance policy and terms and conditions.</p>
+        </div>
+
+        <div class="tables">
+            <div class="unit"> 
+                <h3>1. THE BASICS </h3>
+                <div class="table">
+                    <div class="title">INSURANCE ITEMS</div>
+                    <div class="data">Overseas Traveler's Insurance</div>
+                    <div class="title">POLICY NO.</div>
+                    <div class="data border-r">1255421-2</div>
+    
+                    <div class="title">DESTINATION</div>
+                    <div class="data fill border-r" >Japan (Travel)</div>
+    
+                    <div class="title">POLICY PERIOD</div>
+                    <div class="data fill border-r" >FROM 2024-07-01 TO 2024-07-10</div>
+    
+                    <div class="title border-b">TOTAL PREMIUM</div>
+                    <div class="data border-b">100,000</div>
+                    <div class="title  border-b">INSURANCE PAYMENT DATE</div>
+                    <div class="data border-r border-b">2024-06-30</div>
+                </div>
+            </div>
+            <div class="unit"> 
+                <h3>2. INSURED INFOMATION</h3>
+                <div class="table">
+                    <div class="title">NAME</div>
+                    <div class="data">GILDONG HONG and two others</div>
+                    <div class="title">YEAR OF BIRTH</div>
+                    <div class="data border-r">1999</div>
+    
+                    <div class="title">MOBILE PHONE NUMBER</div>
+                    <div class="data">010-1234-5678</div>
+                    <div class="title">E-MAIL</div>
+                    <div class="data border-r">gildong@gmail.com</div>
+    
+                    <div class="title  border-b">BENEFICIARY</div>
+                    <div class="data fill border-r border-b" >ㅇ In case of death: legal heir ㅇ death and others: principal (however, in case of minors, legal representative)</div>
+
+                </div>
+            </div>
+
+            <div class="unit">
+                <h3>3. DETAILS OF COVERAGE </h3>
+                <div class="claimTable">
+                   <div class="title">COVERAGE</div>
+                   <div class="title">CURRENCY</div>
+                   <div class="title border-r">DEDUCTIBLE</div>
+                   <div class="data border-b">1</div>
+                   <div class="data border-b">2</div>
+                   <div class="data border-b border-r">3</div>
+
+                </div>
+            </div>
+        </div> 
+
+        <p class="comment">As shown above, we confirm that GILDONG HONG and two other customers have signed up for overseas traveler's insurance.</p>
+
+        <div class="signBox">
+            <p>Issue date : YYYYYear MMmonth DDdate</p>
+            <img src="/images/dbSignEng.svg" alt="Sign">
+        </div>
+
+        <div class="additionals">
+            <p class="bold">There is no maturity cancellation refund due to the coverage insurance.</p>
+            <p class="normal">* If the contract is terminated due to the end of the insurance period or non-payment of insurance premiums, our liability for compensation does not arise.</p>
+            <p class="normal">* Intentional accidents are not compensated, and please refer to the terms and conditions for insurance payment 
+                restrictions such as payment limits, exemptions, and reduction payments.</p>
+            <p class="bold">For insurance-related inquiries, please check out the customer center below.</p>
+        </div>
+
+       <div class="contact">
+        <p>※ Customer Center (9 a.m. to 6 p.m.) on weekdays: 1577-7033</p>
+        <p>※ Emergency contact information during overseas travel (24 hours): OOOO-OOOO</p>
+        <p>※ Travel Safety Country Site: Ministry of Foreign Affairs Travel Alert System http://www.0404.go.kr</p>
+       </div> 
+    </div> 
+    <script src="scripts.js"></script>
+  </body>
+</html>

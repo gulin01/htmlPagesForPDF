@@ -39,7 +39,7 @@
           font-family: 'Noto Sans KR', sans-serif;
         }
         #wrapper {
-           /* width: 720px; */
+           min-width: 720px;
            width: fit-content;
            height: fit-content;
            padding:35px;
@@ -224,16 +224,6 @@
                 border-bottom: 1px solid #000;
             }
            }
-           .red{
-               color: #F00;
-               font-family: Inter;
-               font-size: 10px;
-               font-style: normal;
-               font-weight: 400;
-               line-height: normal;
-               margin-left: 5px;;
-           }
-        
         
         .comment{
             width: 100%;
@@ -318,63 +308,63 @@
   <body>
     <div id="wrapper">
         <div class="section1">
-            <img src="/images/hyundaiMini.svg" alt="현대해상" class="introImg"/>
-            <p>해외여행자보험 가입증명서</p>
+            <img src="/images/dbMini.svg" alt="현대해상" class="introImg"/>
+            <p>OVERSEAS TRAVELLER'S INSURANCE CERTIFICATION</p>
         </div>
 
         <div class="intro">
-            <p>※ 아래와 같이 보험계약사항이 있음을 증명합니다.</p>
-            <p>※ 이 증명서는 보험가입사실을 확인하는 용도로만 사용 가능하며, 보험계약사항과 관련된 모든 사항은 해당 보험증권 및 약관을 따릅니다.</p>
+            <p>※ This is to certify that the insurer has issued policies of insurance as indicated belows.</p>
+            <p>※ This certificate can only be used to confirm the fact that you are insured, and all matters related to the insurance contract are subject to the applicable insurance policy and terms and conditions.</p>
         </div>
 
         <div class="tables">
             <div class="unit"> 
-                <h3>1. 기본사항 </h3>
+                <h3>1. THE BASICS </h3>
                 <div class="table">
-                    <div class="title">보험종목</div>
-                    <div class="data">해외여행자보험</div>
-                    <div class="title">증권번호</div>
+                    <div class="title">INSURANCE ITEMS</div>
+                    <div class="data">Overseas Traveler's Insurance</div>
+                    <div class="title">POLICY NO.</div>
                     <div class="data border-r">1255421-2</div>
     
-                    <div class="title">여행지</div>
-                    <div class="data fill border-r" >일본 (여행)</div>
+                    <div class="title">DESTINATION</div>
+                    <div class="data fill border-r" >Japan (Travel)</div>
     
-                    <div class="title">보험기간</div>
-                    <div class="data fill border-r" >2024-07-01 부터 2024-07-10 까지</div>
+                    <div class="title">POLICY PERIOD</div>
+                    <div class="data fill border-r" >FROM 2024-07-01 TO 2024-07-10</div>
     
-                    <div class="title border-b">납입보험료</div>
+                    <div class="title border-b">TOTAL PREMIUM</div>
                     <div class="data border-b">100,000</div>
-                    <div class="title  border-b">보험료 결제일</div>
+                    <div class="title  border-b">INSURANCE PAYMENT DATE</div>
                     <div class="data border-r border-b">2024-06-30</div>
                 </div>
             </div>
             <div class="unit"> 
-                <h3>2. 보험가입자(피보험자) 정보 </h3>
+                <h3>2. INSURED INFOMATION</h3>
                 <div class="table">
-                    <div class="title">이름</div>
-                    <div class="data">홍길동 <span class="red">외 2인</span></div>
-                    <div class="title">출생년도</div>
+                    <div class="title">NAME</div>
+                    <div class="data">GILDONG HONG and two others</div>
+                    <div class="title">YEAR OF BIRTH</div>
                     <div class="data border-r">1999</div>
     
-                    <div class="title">휴대폰번호</div>
+                    <div class="title">MOBILE PHONE NUMBER</div>
                     <div class="data">010-1234-5678</div>
-                    <div class="title">이메일</div>
+                    <div class="title">E-MAIL</div>
                     <div class="data border-r">gildong@gmail.com</div>
     
-                    <div class="title border-b">보험금수령인</div>
-                    <div class="data fill border-r border-b" >ㅇ사망 시 : 법정상속인  ㅇ사망 외 : 본인(단, 미성년의 경우 법정대리인)</div>
+                    <div class="title  border-b">BENEFICIARY</div>
+                    <div class="data fill border-r border-b" >ㅇ In case of death: legal heir ㅇ death and others: principal (however, in case of minors, legal representative)</div>
 
                 </div>
             </div>
 
             <div class="unit">
-                <h3>3. 보장내용 </h3>
+                <h3>3. DETAILS OF COVERAGE </h3>
                 <div class="claimTable">
-                   <div class="title row-span-2">구분</div>
-                   <div class="title col-span-2">보장금액</div>
-                   <div class="title border-r  row-span-2">자기부담금</div>
-                   <div class="data subtitle">14세미만</div>
-                   <div class="data  subtitle">15세이상</div>
+                   <div class="title row-span-2">COVERAGE</div>
+                   <div class="title col-span-2">CURRENCY</div>
+                   <div class="title border-r  row-span-2">DEDUCTIBLE</div>
+                   <div class="data subtitle">ages 1 to 14</div>
+                   <div class="data  subtitle">ages 15 to 69</div>
 
                    
                    <div class="data border-b ">1</div>
@@ -385,24 +375,25 @@
             </div>
         </div> 
 
-        <p class="comment">위와 같이 홍길동 외 2인의 고객님께서는 해외여행자보험에 가입하셨음을 확인합니다.</p>
+        <p class="comment">As shown above, we confirm that GILDONG HONG and two other customers have signed up for overseas traveler’s insurance.</p>
 
         <div class="signBox">
-            <p>발급일 : YYYY년 MM월 DD일</p>
-            <img src="/images/hyondeSign.svg" alt="Sign">
+            <p>Issue date : YYYYYear MMmonth DDdate</p>
+            <img src="/images/dbSignEng.svg" alt="Sign">
         </div>
 
         <div class="additionals">
-            <p class="bold">보장성 보험으로 만기 해지 환급금이 없습니다.</p>
-            <p class="normal">*보험기간의 종료 및 보험료 미납에 의하여 계약이 해지된 경우는 당사의 보상책임이 발생하지 않습니다.</p>
-            <p class="normal">*고의사고는 보장하지 아니하며, 지급한도, 면책사항, 감액지급사항 등 보험금지급제한 조건에 대해서는 반드시 약관을 참조하시기 바랍니다.</p>
-            <p class="bold">보험관련 문의는 아래의 고객센터로 확인해 주세요.</p>
+            <p class="bold">There is no maturity cancellation refund due to the coverage insurance.</p>
+            <p class="normal">* If the contract is terminated due to the end of the insurance period or non-payment of insurance premiums, our liability for compensation does not arise.</p>
+            <p class="normal">* Intentional accidents are not compensated, and please refer to the terms and conditions for insurance payment 
+                restrictions such as payment limits, exemptions, and reduction payments.</p>
+            <p class="bold">For insurance-related inquiries, please check out the customer center below.</p>
         </div>
 
        <div class="contact">
-        <p>※ 고객센터(평일 오전 9시 ~ 오후 6시) : 1577-7033</p>
-        <p>※ 해외여행 중 긴급 연락처(24시간) : 0000-0000</p>
-        <p>※ 여행 안전국가 사이트 참고 : 외교부 여행경보제도 http://www.0404.go.kr</p>
+        <p>※ Customer Center (9 a.m. to 6 p.m.) on weekdays: 1577-7033</p>
+        <p>※ Emergency contact information during overseas travel (24 hours): OOOO-OOOO</p>
+        <p>※ Travel Safety Country Site: Ministry of Foreign Affairs Travel Alert System http://www.0404.go.kr</p>
        </div> 
     </div> 
     <script src="scripts.js"></script>

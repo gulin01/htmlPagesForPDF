@@ -1,0 +1,238 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="HandheldFriendly" content="true" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>가입증명서</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+      * {
+        /* overflow-y: hidden; */
+        margin:0px;
+        box-sizing: border-box;
+      }
+      html {
+        height: 100vh;
+        background-color: #fff;
+      }
+      body {
+        margin: 0px;
+        min-width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        overflow-y: auto;
+      }
+      * {
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      #wrapper {
+         min-width: 720px;
+         max-width: 1000px;
+         width: fit-content;
+         height: fit-content;
+         padding:35px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         height: 1368px;
+
+      
+      }
+
+      
+
+      
+      
+      
+      .tables{
+          height: fit-content;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap:38px;
+          margin-top: 70px;
+          
+          .unit{
+              display: flex;
+              flex-direction: column;
+              gap:6px;
+              width: 100%;
+      
+              h3{
+                  color: #000;
+                  font-family: Inter;
+                  font-size: 13px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+              }
+          }
+         
+      
+         .claimTable{
+          display: grid;
+          grid-template-columns : 10% 30% 30% 30% ;
+          width: 100%;
+      
+          .title{
+            background: #AABCFF;
+             border-top: 1px solid #000;
+              /* border-right: 1px solid #000; */
+              border-left: 1px solid #000;
+              height: 21px;
+              color: #000;
+              font-family: Inter;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+      
+          .data{
+              border-top: 1px solid #000;
+              border-left: 1px solid #000;
+              height: 21px;
+              color: #000;
+              font-family: Inter;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              display: flex;
+              align-items: center;
+              padding-left: 4px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+      
+          .subtitle{
+              background: #DBE2FB;
+          }
+      
+
+      
+      
+         }
+         .id{
+          background: #DBE2FB;
+         }
+         .border-r {
+          border-right: 1px solid #000;
+          }
+          .fill{
+              grid-column: span 3;
+          }
+      
+          .border-b{
+              border-bottom: 1px solid #000;
+          }
+         }
+
+      
+       .signBox{
+          margin-top: 40px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          gap:10px;
+
+          img{
+            max-width: 332px;
+            max-height: 126px;
+          }
+     
+       }
+      
+
+      
+
+      
+/* WORKING ON IT */
+        </style>  
+        
+    </head>
+  <body>
+    <div id="wrapper">
+        <div class="tables">
+            <div class="unit"> 
+                <h3>4. TOTAL INSURED INFOMATION</h3>
+                <div class="claimTable">
+                    <div class="title">COVERAGE</div>
+                    <div class="title">NAME</div>
+                    <div class="title">RESIDENT REGISTRATION NO</div>
+                    <div class="title  border-r">TOTAL PREMIUM</div>
+                </div>
+            </div>
+ 
+        </div> 
+
+        <div class="signBox">
+            <img src="/images/dbSignEng.svg" alt="Sign">
+        </div>
+    </div> 
+    <script>
+const users = [
+  { id: '1', name: 'John Doe', ssn: '123456-7890123', insurance: '150,000' },
+  { id: '2', name: 'Jane Smith', ssn: '234567-8901234', insurance: '200,000' },
+  { id: '3', name: 'Alice Johnson', ssn: '345678-9012345', insurance: '250,000' },
+  { id: '4', name: 'John Doe', ssn: '123456-7890123', insurance: '150,000' },
+  { id: '5', name: 'Jane Smith', ssn: '234567-8901234', insurance: '200,000' },
+  { id: '6', name: 'Alice Johnson', ssn: '345678-9012345', insurance: '250,000' }
+];
+
+const claimTable = document.querySelector('.claimTable');
+
+         users.forEach((user, index) => {
+           const idDiv = document.createElement('div');
+           idDiv.className = 'data id';
+           idDiv.textContent = user.id;
+         
+           const nameDiv = document.createElement('div');
+           nameDiv.className = 'data';
+           nameDiv.textContent = user.name;
+         
+           const ssnDiv = document.createElement('div');
+           ssnDiv.className = 'data';
+           ssnDiv.textContent = user.ssn;
+         
+           const insuranceDiv = document.createElement('div');
+           insuranceDiv.className = 'data  border-r';
+           insuranceDiv.textContent = user.insurance;
+           if (index === users.length - 1) {
+               idDiv.classList.add('border-b');   
+               nameDiv.classList.add('border-b');   
+               ssnDiv.classList.add('border-b');   
+               insuranceDiv.classList.add('border-b');
+        }
+         
+           claimTable.appendChild(idDiv);
+           claimTable.appendChild(nameDiv);
+           claimTable.appendChild(ssnDiv);
+           claimTable.appendChild(insuranceDiv);
+         });
+    </script>
+  </body>
+</html>
+<!-- <div class="data  border-b">1255421-2</div>
+<div class="data  border-b" >jorge</div>
+<div class="data border-b" >990809-8799991</div>
+<div class="data border-b border-r">100,000</div> -->

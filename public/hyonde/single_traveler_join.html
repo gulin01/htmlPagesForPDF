@@ -9,13 +9,11 @@
     />
     <meta name="HandheldFriendly" content="true" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>가입증명서</title>
-    <style>
-        
+    <title>가입이메일</title>
+   <style>
+    
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 * {
-  /* overflow-y: hidden; */
-  
   margin:0px;
   box-sizing: border-box;
 }
@@ -40,7 +38,6 @@ body {
 }
 #wrapper {
    min-width: 720px;
-   max-width: 1000px;
    width: fit-content;
    height: fit-content;
    padding:35px;
@@ -116,8 +113,6 @@ body {
             font-weight: 600;
             line-height: normal;
         }
-
-        
     }
    
    .table{
@@ -158,7 +153,46 @@ body {
     }
    }
 
+   .claimTable{
+    display: grid;
+    grid-template-columns : 40% 30% 30% ;
+    width: 100%;
 
+    .title{
+        background-color: #DBE2FB;
+        border-top: 1px solid #000;
+        /* border-right: 1px solid #000; */
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data{
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        height: 21px;
+        color: #000;
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        padding-left: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   }
 
    .border-r {
     border-right: 1px solid #000;
@@ -248,63 +282,13 @@ body {
     }
   }
 
-
-  .claimTable{
-    display: grid;
-    grid-template-columns : 20% 20% 30% 30% ;
-    width: 100%;
-
-    .title{
-        background: #AABCFF;
-        border-top: 1px solid #000;
-        border-left: 1px solid #000;
-        height: 21px;
-        color: #000;
-        font-family: Inter;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .data{
-        border-top: 1px solid #000;
-        border-left: 1px solid #000;
-        height: 21px;
-        color: #000;
-        font-family: Inter;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        display: flex;
-        align-items: center;
-        padding-left: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-   }
-
-   .col-span-2 {
-    grid-column: span 2;
-    }
-   .blue-1{
-    background: #DBE2FB;
-   }
-   .blue-2{
-    background: #EFF3FF;   
-   }
-    </style>
+   </style>
   </head>
   <body>
     <div id="wrapper">
         <div class="section1">
             <img src="/images/hyundaiMini.svg" alt="현대해상" class="introImg"/>
-            <p>소상공인 보험 가입증명서</p>
+            <p>해외여행자보험 가입증명서</p>
         </div>
 
         <div class="intro">
@@ -317,12 +301,12 @@ body {
                 <h3>1. 기본사항 </h3>
                 <div class="table">
                     <div class="title">보험종목</div>
-                    <div class="data">소상공인 보험</div>
-                    <div class="title">증권번호</div>
-                    <div class="data border-r">1255421-2</div>
+                    <div class="data">해외여행자보험</div>
+                    <div class="title">보험종목</div>
+                    <div class="data border-r">해외여행자보험</div>
     
-                    <div class="title">피보험자(사업자)명</div>
-                    <div class="data fill border-r" >홍길동</div>
+                    <div class="title">여행지</div>
+                    <div class="data fill border-r" >일본 (여행)</div>
     
                     <div class="title">보험기간</div>
                     <div class="data fill border-r" >2024-07-01 부터 2024-07-10 까지</div>
@@ -334,44 +318,40 @@ body {
                 </div>
             </div>
             <div class="unit"> 
-                <h3>2. 보장(사업장) 정보 </h3>
-                <div class="table"> 
-                    <div class="title">사업자명</div>
-                    <div class="data">(주)모빈스 </div>
-                    <div class="title">사업자번호</div>
-                    <div class="data border-r">112-11-12345</div>
+                <h3>2. 보험가입자(피보험자) 정보</h3>
+                <div class="table">
+                    <div class="title">이름</div>
+                    <div class="data">홍길동</div>
+                    <div class="title">출생년도</div>
+                    <div class="data border-r">1999</div>
     
-                    <div class="title">사업자주소</div>
-                    <div class="data">서울시 구로구 디지털로32가길 18 3층 </div>
+                    <div class="title">휴대폰번호</div>
+                    <div class="data " >010-1234-5678</div>
                     <div class="title">이메일</div>
                     <div class="data border-r">gildong@gmail.com</div>
-
-                    <div class="title">업종</div>
-                    <div class="data">음식점</div>
-                    <div class="title">매출액</div>
-                    <div class="data border-r">20억 이하</div>
-
-                    <div class="title">연면적</div>
-                    <div class="data">30평(99.17㎡)</div>
-                    <div class="title">연락처</div>
-                    <div class="data border-r">010-2345-5678</div>
-
+    
+    
+                    <div class="title border-b">보험금수령인</div>
+                    <div class="data fill border-r border-b" >ㅇ사망 시 : 법정상속인  ㅇ사망 외 : 본인(단, 미성년의 경우 법정대리인)</div>
+    
                 </div>
             </div>
 
             <div class="unit">
                 <h3>3. 보장내용 </h3>
                 <div class="claimTable">
-                   <div class="title ">구분</div>
-                   <div class="title">가입금액 및 보상한도액</div>
-                   <div class="title ">자기부담금</div>
-                   <div class="title ">보상내용</div>
-                   <!-- DYNAMIC DATA -->
+                   <div class="title">구분</div>
+                   <div class="title">보장금액</div>
+                   <div class="title border-r">자기부담금</div>
+                   <div class="data border-b">1</div>
+                   <div class="data border-b">2</div>
+                   <div class="data border-b border-r">3</div>
+
                 </div>
             </div>
         </div> 
 
-        <p class="comment">위와 같이 홍길동 고객님께서는 반려동물보험에 가입하셨음을 확인합니다.</p>
+        <p class="comment">위와 같이 홍길동 고객님께서는 해외여행자보험에 가입하셨음을 확인합니다.</p>
 
         <div class="signBox">
             <p>발급일 : YYYY년 MM월 DD일</p>
@@ -381,117 +361,16 @@ body {
         <div class="additionals">
             <p class="bold">보장성 보험으로 만기 해지 환급금이 없습니다.</p>
             <p class="normal">*보험기간의 종료 및 보험료 미납에 의하여 계약이 해지된 경우는 당사의 보상책임이 발생하지 않습니다.</p>
-            <p class="normal">*치료비보험은 상해 또는 질병으로 발생한 치료비에서 상시 자기부담금 차감한 후 40%에 해당하는 금액을 보상한도액 내에서 지급합니다.</p>
-            <p class="normal">*질병치료비와 사망위로금의 면책기간은 30일이며, 갱신 시 기존보장에 대한 면책기간은 면제됩니다.(단, 슬개골/고관절질환의 경우 90일)</p>
             <p class="normal">*고의사고는 보장하지 아니하며, 지급한도, 면책사항, 감액지급사항 등 보험금지급제한 조건에 대해서는 반드시 약관을 참조하시기 바랍니다.</p>
             <p class="bold">보험관련 문의는 아래의 고객센터로 확인해 주세요.</p>
         </div>
 
        <div class="contact">
         <p>※ 고객센터(평일 오전 9시 ~ 오후 6시) : 1577-7033</p>
+        <p>※ 해외여행 중 긴급 연락처(24시간) : 0000-0000</p>
+        <p>※ 여행 안전국가 사이트 참고 : 외교부 여행경보제도 http://www.0404.go.kr</p>
        </div> 
     </div> 
-    <script >
-
-const claimsHistory = [
-    {
-        type: "재물손해 - 시설, 집기, 재고자산",
-        joinFee: "30,000,000원",
-        self: "10,000원",
-        note: "사업장 내 직접손해 및 타인의 재물 손실"
-    },
-    {
-        type: "재물손해 - 도난",
-        joinFee: "10,000,000원",
-        self: "면책기간 10일",
-        note: "화재로 인해 영업불가 상태에서의 매출손실 보장"
-    },
-    {
-        type: "배상책임 - 화재배상",
-        joinFee: "50,000,000원",
-        self: "20,000원",
-        note: "화재로 인한 타인 재물 손해 및 배상 책임"
-    },
-    {
-        type: "배상책임 - 화재소송",
-        joinFee: "20,000,000원",
-        self: "면책기간 7일",
-        note: "화재 관련 소송 비용 보장"
-    },
-    {
-        type: "손해배상 - 고객 상해",
-        joinFee: "15,000,000원",
-        self: "5,000원",
-        note: "고객이 사업장 내에서 입은 상해에 대한 배상"
-    },
-    {
-        type: "손해배상 - 직원 상해",
-        joinFee: "25,000,000원",
-        self: "10,000원",
-        note: "직원이 업무 중 입은 상해에 대한 배상"
-    },
-    {
-        type: "비용손해 - 영업손실",
-        joinFee: "40,000,000원",
-        self: "면책기간 14일",
-        note: "재해로 인한 영업 중단에 따른 손실 보장"
-    },
-    {
-        type: "비용손해 - 긴급복구비용",
-        joinFee: "5,000,000원",
-        self: "3,000원",
-        note: "재해 발생 후 긴급 복구를 위한 비용 보장"
-    },
-    {
-        type: "비용손해 - 임시거주비용",
-        joinFee: "7,000,000원",
-        self: "면책기간 5일",
-        note: "재해로 인한 임시 거주 비용 보장"
-    },
-    {
-        type: "비용손해 - 의료비",
-        joinFee: "10,000,000원",
-        self: "10,000원",
-        note: "사고 발생 시 의료비 보장"
-    }
-];
-
-const claimTable = document.querySelector('.claimTable');
-
-claimsHistory.forEach((claim, index) => {
-    // Type and Range (span 2 columns)
-    const typeDiv = document.createElement('div');
-    typeDiv.className = 'data blue-1';
-    typeDiv.textContent = claim.type
-  
-    const rangeDiv = document.createElement('div')
-    rangeDiv.className = "data blue-2"
-    rangeDiv.textContent = claim.range
-
-    // Price
-    const priceDiv = document.createElement('div');
-    priceDiv.className = 'data';
-    priceDiv.textContent = claim.price;
-
-    // Self Pay
-    const selfDiv = document.createElement('div');
-    selfDiv.className = 'data border-r';
-    selfDiv.textContent = claim.self;
-
-    // If it's the last row, add the `border-b` class
-    if (index === claimsHistory.length - 1) {
-        typeDiv.classList.add('border-b');
-        rangeDiv.classList.add('border-b');
-        priceDiv.classList.add('border-b');
-        selfDiv.classList.add('border-b');
-    }
-
-    // Append to the claimTable
-    claimTable.appendChild(typeDiv);
-    claimTable.appendChild(rangeDiv);
-    claimTable.appendChild(priceDiv);
-    claimTable.appendChild(selfDiv);
-});
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>
